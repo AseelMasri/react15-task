@@ -2,34 +2,38 @@
   max-width: 600px;
 }
 
-.form input,
-.form textarea {
+.form :global(.form-control) {
   border: none;
   border-bottom: 2px solid #dee2e6;
   border-radius: 0;
   padding: 12px 5px;
   font-size: 16px;
+  box-shadow: none;
 }
 
-.form input:focus,
-.form textarea:focus {
+.form :global(.form-control:focus) {
   outline: none;
   box-shadow: none;
   border-bottom-color: var(--brand-green);
 }
 
-.btnSend {
+.form :global(button).btnSend {
   background-color: var(--brand-green);
+  border-color: var(--brand-green);
   color: #fff;
-  padding: 10px 22px;
-  border-radius: 6px;
-  border: none;
-  font-weight: 600;
 }
 
-.btnSend:hover {
-  background-color: var(--brand-green-600);
-  color: #fff;
+.btnSend {
+  --bs-btn-hover-bg: var(--brand-green-600);
+  --bs-btn-hover-border-color: var(--brand-green-600);
+  --bs-btn-hover-color: #fff;
+
+  --bs-btn-active-bg: var(--brand-green-600);
+  --bs-btn-active-border-color: var(--brand-green-600);
+
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
 }
 
 .divider {
