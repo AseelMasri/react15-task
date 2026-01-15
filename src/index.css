@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap");
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce){
+  html { scroll-behavior: auto; }
+}
+
+:root{
+  --nav-h: 55px;
+  --brand-green: #1abc9c;
+  --brand-green-600: #17a689;
+  --brand-navy: #2c3e50; 
+  --brand-navy-dark:#1a252f;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  padding-top: var(--nav-h); 
+  
+}
+
+[id], :target { scroll-margin-top: var(--nav-h); }
+
+.opacity-95{ opacity:.95; }    
+.section-pad{ padding-block: 3rem; } 
