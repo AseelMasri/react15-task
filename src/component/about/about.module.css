@@ -1,0 +1,28 @@
+.about{
+  background-color: var(--brand-green, #1abc9c);
+  color: #fff;
+  text-align: center;
+
+  --about-fg: #fff;
+}
+
+.heading{
+  font-family: var(--font-heading, "Montserrat", sans-serif);
+  letter-spacing: .08em;
+}
+
+.line{
+  width: 6rem;
+  height: 4px;
+  background: var(--about-fg);
+  border-radius: 10px;
+}
+.icon{
+  color: var(--about-fg);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.btnLetter{
+  letter-spacing: .03em;
+}
